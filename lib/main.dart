@@ -25,18 +25,7 @@ import 'package:logging/logging.dart';
 import 'package:provider/provider.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: const FirebaseOptions(
-
-      apiKey: "AIzaSyBE3vqWd_ReJyeHVcqtGe7uPDN9Gw6IyjY",
-  authDomain: "delloni.firebaseapp.com",
-  projectId: "delloni",
-  storageBucket: "delloni.firebasestorage.app",
-  messagingSenderId: "324991894056",
-  appId: "1:324991894056:web:3ded49b4babd1aa261eb1d",
-  measurementId: "G-L3GET4YLJB"
-    ),
-  );
+ 
   if (kIsWeb) {
     Logger.root.level = Level.ALL;
     Logger.root.onRecord.listen((record) {
